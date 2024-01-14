@@ -8,11 +8,11 @@ function Topbar() {
     <div className="prev-next-buttons">
       <button type="button" className="bi bi-chevron-left "> </button>
       <button type="button" className="bi bi-chevron-right"> </button>
-    
+      <div className='search-btn-song '>  
+   <Link to='/search-btn'><input type='text' placeholder='What do you want to listen to???'></input></Link> 
     </div>
 
-    <div className='search-btn-song '>  
-    <input type='text' placeholder='What do you want to listen to???'></input></div>
+    </div>
     <div className="navbar">
       <ul>
         <li>

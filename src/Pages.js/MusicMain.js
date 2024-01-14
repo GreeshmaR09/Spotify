@@ -1,13 +1,12 @@
 import React from 'react'
+import Musicmaincom from '../Components/Musicmaincom'
 import Navinplay from '../Components/Navinplay'
-import Topbarafter from '../Components/Topbarafter'
-import Searchitems from '../Components/Searchitems'
-import Footer from '../Components/Footer'
-import Playlist from '../Components/Playlist'
-import Listeningsong from '../Components/Listeningsong'
 import Playlistafter from '../Components/Playlistafter'
+import Topbarafter from '../Components/Topbarafter'
+import Footer from '../Components/Footer'
+import Listeningsong from '../Components/Listeningsong'
 
-function SearchActiveafter() {
+function MusicMain() {
   return (
     <div className='main-container'>
     <div class="sub-container">
@@ -18,7 +17,7 @@ function SearchActiveafter() {
   <div>
     <Topbarafter/>
   <div className='search-content'> 
-  <Searchitems/>
+  <Musicmaincom/>
   <Footer/>
   <Listeningsong/>
   </div>
@@ -33,4 +32,4 @@ function SearchActiveafter() {
   )
 }
 
-export default SearchActiveafter
+export default MusicMain

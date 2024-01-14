@@ -6,6 +6,7 @@ import Body from '../Components/Body'
 import Footer from '../Components/Footer'
 import '../Styles/Style.css'
 import FooterBefore from '../Components/FooterBefore'
+import ListenBody from '../Components/ListenBody'
 
 function Combined() {
   return (<div>
@@ -15,7 +16,8 @@ function Combined() {
   <Playlist/>
   </div>
   <div class="sub-container-right">
-<Body/>
+    <Topbar/>
+<ListenBody/>
 <Footer/>
 
   </div>

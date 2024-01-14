@@ -1,11 +1,8 @@
 import React from 'react'
-import "bootstrap-icons/font/bootstrap-icons.css";
 
-function Listeningsong() {
+function PlayMusic() {
   return (
-    
-    <div className="footer-listen">    
-       
+    <div className="footer-listen">
         
         <div className="left">
             <div className="song-info">
@@ -73,8 +70,7 @@ function Listeningsong() {
         </div>
 
     </div>
-
   )
 }
 
-export default Listeningsong
+export default PlayMusic

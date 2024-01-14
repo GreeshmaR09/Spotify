@@ -31,7 +31,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap:10px
+    gap:10px;
 }
 
 .login {
@@ -69,6 +69,7 @@ div ul {
 
 .icon {
     width: 23px;
+    cursor: pointer;
 
 }
 
@@ -181,10 +182,13 @@ div ul {
 .main-right-container {
     display: flex;
     gap: 10px;
-    justify-content: center;
     flex-wrap: wrap;
   
 
+}
+.main-right-container ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .spotify-playlists::-webkit-scrollbar {
@@ -233,6 +237,8 @@ div ul {
     background-color:#252525;
 
 }
+
+
 .spotify-playlists .list{
     display: flex;
     flex-wrap: wrap;
@@ -260,7 +266,20 @@ div ul {
 }
 .spotify-playlists .list .item .play .bi{
     font-size: 30px;
+    background-color: #1ed760;
+    color: #000000;
+    transform: translateY(-20px);
 }
+.audio-control-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .audio-control-button.playing {
+    color: green; 
+  }
+  
 .spotify-playlists .list .item:hover .play .fa{
     opacity: 1;
     transform: translateY(-20px);
@@ -306,7 +325,7 @@ div ul {
     display: flex;
     justify-content: space-between;
     background-color: rgb(10, 10, 10);
-    padding: 5px 25px;
+    padding: 15px 25px;
     flex-direction: row;
     align-items: center;
     border-top-right-radius:10px ;
@@ -324,11 +343,14 @@ div ul {
     margin-right: 10px;
 
 }
-
+.prev-next-buttons{
+    display: flex;
+    align-items: center;
+}
 .topbar .navbar{
     display: flex;
     align-items: center;
-    
+    gap:10px;
 }
 
 .topbar .navbar ul{
@@ -342,6 +364,7 @@ div ul {
     width: 70px;
 
 }
+
 
 .topbar .navbar ul li a{
     color: #b3b3b3;
@@ -407,6 +430,7 @@ div ul {
     border-radius: 20px;
     margin: 0px 10px;
     background-color:  rgb(17, 17, 17);
+    
 }
 .image-thumbnail{
     width: 170px;
@@ -701,9 +725,8 @@ section div.main-container-login .last-qtn span{
 }
 .search-btn-song input{
     display: block;
-    padding: 14px;
-    width:324px;
-    margin-bottom: 15px;
+    padding: 12px;
+    width:310px;
     font-size: 15px;
     font-weight: 500;
     background: rgb(12,12,12);
@@ -713,7 +736,7 @@ section div.main-container-login .last-qtn span{
     border: none;
 }
 .item-search{
-    width: 200px;
+    width: 190px;
     height: 210px;
     background-color: rgb(214, 14, 158);
     border-radius: 6px;
@@ -775,6 +798,10 @@ section div.main-container-login .last-qtn span{
     cursor: pointer;
     bottom: 0;
 
+}
+.main-container-login .error{
+    background-color: rgb(249, 0, 0);
+   
 }
 
 
@@ -924,3 +951,398 @@ section div.main-container-login .last-qtn span{
     color: white;
 
 }
+.btn-for-list button{
+    border: none;
+    background-color:  rgb(37, 37, 37);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;
+}
+.btn-for-list {
+    display: flex;
+    gap:10px;
+    margin: 30px 20px;
+    font-weight:bold;
+}
+
+
+.bottom-side .library {
+    display: flex;
+    flex-direction: column;
+}
+
+ .bottom-side i {
+    cursor: pointer;
+    font-size: 24px;
+    color: #f5f3f3a3;
+}
+
+.bottom-side i:hover,
+.bottom-side i:active,
+ .bottom-side i:focus{
+    color: white;
+}
+
+
+ .bottom-side span {
+    cursor: pointer;
+    color: #f5f3f3a3;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.bottom-side span:hover,
+ .bottom-side span:active,
+ .bottom-side span:focus{
+    color: white;
+}
+
+
+
+ .bottom-side .row1 {
+    float: right;
+    margin-left: 10px;
+    border-radius: 100%;
+    background-color: rgba(219, 212, 212, 0);
+    border: 0;
+}
+
+
+.bottom-side .library .row2 {
+    background-color: #2d2a2a;
+    color: #f5f3f3a3;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: -10px;
+
+
+}
+
+.playback-page-sidebar .bottom-side .library .row2:hover,
+.playback-page-sidebar .bottom-side .library .row2:active,
+.playback-page-sidebar .bottom-side .library .row2:focus {
+    background-color: #3c3737;
+    color: #f5f3f3;
+}
+
+ .Recents {
+    margin-top: 10px;
+}
+
+ .Recents i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Recents span {
+    float: right;
+    margin-left: 8px;
+    color: #f5f3f3a3;
+    cursor: pointer;
+}
+
+.music-folders {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    gap:10px;
+
+
+}
+
+.music-folders .folder {
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.music-folders .folder div img {
+    height: 50px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+
+.music-folders .folder .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+
+.music-folders .folder .details li {
+    list-style-type: none;
+    ;
+
+}
+
+.music-folders .folder .details .name {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+
+.music-folders .folder .details .about {
+    font-size: 11px;
+    color: #f5f3f3a3;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.music-folders .folder:hover,
+.music-folders .folder:active,
+.music-folders .folder:focus{
+    background-color: black;
+}
+.custom-audio-button {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #1ed760;
+    border-radius: 100%;
+  }
+  
+  .music-list-page {
+    display: flex;
+    flex-direction: column;  
+    margin-left: 15px;
+    background-size: cover;
+
+}
+.music-list-page .header{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 350px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    gap: 20px;
+    background: linear-gradient(to bottom, #0b0209 , rgba(1, 12, 23, 0.914));
+}
+
+
+.music-list-page .header .images img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+   
+}
+
+.music-list-page .header .folder-details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    
+} 
+
+.music-list-page .header .folder-details .name{
+    font-size: 100px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.details span{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: bold;
+  
+    
+}
+
+.music-list-page .music-list{
+    background: linear-gradient(to bottom,rgba(1, 12, 23, 0.914) , rgb(1, 12, 23));
+    width: 100%;
+    overflow: hidden;
+    height: 1000px;
+    border-top: 1px solid rgba(0, 0, 0, 0.914);
+
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+   
+
+
+}
+ .navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.47);
+    font-size: 32px;
+    gap: 20px;
+    padding: 20px;
+   
+ }
+
+
+ .music-list .navbar ul .bi:hover,
+ .music-list .navbar ul .bi:active,
+ .music-list .navbar ul .bi:focus{
+    color: white;
+ }
+
+ .music-list .navbar ul .bi-search{
+    font-size: 18px;
+ }
+
+ .music-list .navbar ul .bi-list-ul{
+    font-size: 20px;
+ }
+
+
+ .music-list .music-list-headings{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.473);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    overflow: hidden;
+    margin-bottom: 20px;
+ }
+
+
+
+ .music-list .music-list-headings .number{
+    width:5%;
+    text-align: center;
+    overflow: hidden;
+  
+   
+ }
+
+
+ .music-list .music-list-headings .title{
+    width: 38%;
+    text-align: start;
+    overflow: hidden;
+ }
+
+ .music-list .music-list-headings .album{
+    width: 19%;
+    text-align: start;
+    overflow: hidden;
+ }
+
+ .music-list .music-list-headings .date-added{
+    width: 19%;
+    text-align: center;
+    overflow: hidden;
+ } 
+ .music-list .music-list-headings .duration{
+    width: 19%;
+    text-align: center;
+    overflow: hidden;
+ }
+
+
+
+ .music-list .song-detils{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.473);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 10px;
+    align-items: center;
+ }
+
+ .music-list .song-detils .number{
+    width:5%;
+    text-align: center;
+    overflow: hidden;
+  
+   
+ }
+
+
+ .music-list .song-detils .title{
+    display: flex;
+    flex-direction: row;
+    width: 38%;
+    text-align: start;
+    overflow: hidden;
+    gap: 12px;
+    align-items: center;
+ }
+
+ .music-list .song-detils .title img{
+    width: 50px;
+    overflow: hidden;
+ } 
+
+ .music-list .song-detils .details{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: start;
+    overflow: hidden;
+ }
+
+ .music-list .song-detils .details .name{
+    font-size: 16px;
+    color: white;
+   
+
+ }
+
+  .music-list .song-detils .details .artist{
+    font-size: 12px;
+    font-family: sans-serif;
+   
+    
+ }
+
+ .music-list .song-detils .album{
+    width: 19%;
+    text-align: start;
+    overflow: hidden;
+ }
+
+ .music-list .song-detils .date-added{
+    width: 19%;
+    text-align: center;
+    text-transform: lowercase;
+    overflow: hidden;
+ } 
+ .music-list .song-detils .duration{
+    width: 19%;
+    text-align: center;
+    overflow: hidden;
+ }

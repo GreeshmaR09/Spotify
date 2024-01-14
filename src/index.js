@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
-import Navbar from './Components/Navbar';
-import Combined from './Pages.js/Combined';
-import Loginpage from './Pages.js/Loginpage';
-import AppRouter from './Approuter/AppRouter';
 import App from './App';
-import APIfetch from './APIfetch';
+import AppRouter from './Approuter/AppRouter';
+import MusicPlay from './Pages.js/MusicPlay';
+import Routertest from './Approuter/Routertest';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     <StrictMode>
-       <App/> 
+       <Routertest/> 
     </StrictMode>
 
 );

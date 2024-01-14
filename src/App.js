@@ -21,9 +21,7 @@ function App() {
         .split("=")[1];
 
       if (accessToken) {
-        // Update the state with the access token
         setToken(accessToken);
-        // Store the token in localStorage if needed
         window.localStorage.setItem("token", accessToken);
       }
     }
